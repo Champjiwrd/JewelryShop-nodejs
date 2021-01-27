@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <%- include head %>
+</head>
+
+<body>
+    <%- include layout %>
+        <main role="main">
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="container" style="margin-top: 100px; margin-bottom: 50px">
+
+            </div>
+
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img width="100%" src="../images/<%=data.jewelry_photo%>"></img>
+                            <div class="d-block d-md-none"><br></div>
+                        </div>
+                        <div class="w-100 d-block d-md-none"></div>
+                        <div class="col">
+                            <h2><%=data.jewelry_name%></h2>
+                            <hr>
+                            <h3> &#3647;<%=data.jewelry_price%></h3><hr>
+                            <p>
+                                <%=data.jewelry_about%>
+                            </p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-lg" style="background-color: #a6192e; color: aliceblue;"
+                                    type="button">Add to cart</button>
+                                <a href="/" class="btn btn-outline-secondary btn-lg">Back to home</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div> <!-- /container -->
+
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
